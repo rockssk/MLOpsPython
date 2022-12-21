@@ -157,7 +157,7 @@ These pipelines use a Docker container on the Azure Pipelines agents to accompli
 
 ### Set up the Model CI, training, evaluation, and registration pipeline
 
-In your Azure DevOps project, create and run a new build pipeline based on the [./pipelines/diabetes_regression-ci.yml](../.pipelines/diabetes_regression-ci.yml)
+In your Azure DevOps project, create and run a new build pipeline based on the [./.pipelines/diabetes_regression-ci.yml](../.pipelines/diabetes_regression-ci.yml)
 pipeline definition in your forked repository.
 
 If you plan to use the release deployment pipeline (in the next section), you will need to rename this pipeline to `Model-Train-Register-CI`.
@@ -253,7 +253,7 @@ The release deployment and batch scoring pipelines have the following behaviors:
 
 ### Set up the Release Deployment pipeline
 
-In your Azure DevOps project, create and run a new **build** pipeline based on the  [./pipelines/diabetes_regression-cd.yml](../.pipelines/diabetes_regression-cd.yml)
+In your Azure DevOps project, create and run a new **build** pipeline based on the  [./.pipelines/diabetes_regression-cd.yml](../.pipelines/diabetes_regression-cd.yml)
 pipeline definition in your forked repository. It is recommended you rename this pipeline to something like `Model-Deploy-CD` for clarity.
 
 **Note**: *While Azure DevOps supports both Build and Release pipelines, when using YAML you don't usually need to use Release pipelines. This repository assumes the usage only of Build pipelines.*
